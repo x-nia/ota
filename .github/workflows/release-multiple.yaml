@@ -18,6 +18,8 @@ jobs:
         include:
           - device-id: cheetah # Pixel Pro 7 
             magisk-preinit-device: persist # https://xdaforums.com/t/guide-to-lock-bootloader-while-using-rooted-otaos-magisk-root.4510295/page-5#post-88499289)
+          - device-id: sunfish # Pixel 4a 
+            magisk-preinit-device: metadata
     uses: ./.github/workflows/release-single.yaml
     secrets: inherit 
     with:
